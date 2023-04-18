@@ -6,17 +6,17 @@ jobs:
         auth:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD
-steps:
-   - checkout 
-   - run: echo "A first hello" This prints "A first hello" to stdout.
-   - run: sleep 25
+    steps:
+      - checkout 
+      - run: echo "A first hello" This prints "A first hello" to stdout.
+      - run: sleep 25
 two:
   docker:
     - image: cimg/ruby:3.0.2
       auth:
         username: mydockerhub-user
         password: $DOCKERHUB PASSWORD
-steps:
+ steps:
    - checkout
    - run: echo "A more familiar hi"
    - run: sleep 15
